@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tema 1</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact details</legend>
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="First name">
+
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Last name">
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your email">
+
+            <label>Phone</label>
+            <input type="phone" name="phone" placeholder="Your phone number">
+        </fieldset>
+
+        <fieldset>
+            <legend>Chose a movie</legend>
+            <label>
+                    <input name="rating" type="radio" value="godzila"> Godzilla
+            </label>
+            <label>
+                    <input name="rating" type="radio" value="aladin"> Aladin
+            </label>
+            <label>
+                    <input name="rating" type="radio" value="child"> Rocketman
+            </label>
+            <label>
+                    <input name="rating" type="radio" value="child"> Spider-man
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose Location</legend>
+            <select name="location">
+                    <option>Choose location</option>
+                    <option value="female">Cinema City - Iulius</option>
+                    <option value="man">Cinema City - Vivo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms and conditions</legend>
+            <input name="terms" id="terms" type="checkbox">acceptTerms
+        </fieldset>
+    </form>
+    
+    <button type="submit">Submit</button>
+
+</body>
+</html>
