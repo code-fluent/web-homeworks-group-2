@@ -1,1 +1,50 @@
-hello
+<html>
+    
+ <form>
+     <fieldset>
+        <legend>Contact details</legend>
+
+        <label for="name">firstName</label>
+        <input id="name" name="name" type="text" placeholder="Name"/>
+
+        <label for="name">lastName</label>
+        <input id="name" name="name" type="text" placeholder="Name"/>
+
+        <label for="email">email</label>
+        <input id="email" name="email" type="email" placeholder="Email"/>
+
+        <label for="phone">phone</label>
+        <input id="phone" name="phone" type="phone" placeholder="Phone"/>
+    </fieldset>
+
+     <fieldset>
+         <legend>Choose a movie</legend>
+
+         <label><input name="movie" type="radio" value="movie1"/>Godzilla </label>
+         <label><input name="movie" type="radio" value="movie2"/>Aladin </label>
+         <label><input name="movie" type="radio" value="movie3"/>Avengers </label>
+         <label><input name="movie" type="radio" value="movie4"/>Rocketman</label>
+         <label><input name="movie" type="radio" value="movie5"/>Spider-man</label>
+     </fieldset>
+
+     <fieldset>
+         <legend>Choose a location</legend>
+
+         <label for="location">Location</label>
+         <select>
+             <option value="i">Cinema City-Iulius</option>
+             <option value="v">Cinema City-Vivo</option>
+         </select>
+     </fieldset>
+
+     <fieldset>
+         <legend>Terms and conditions</legend>
+
+         <label> 
+             <input name="terms" id="terms" type="checkbox"/>acceptTerms
+         </label>
+     </fieldset>
+
+<button type="submit">Buy tickets</button>        
+ </form>   
+</html>
