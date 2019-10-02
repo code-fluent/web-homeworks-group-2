@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Welcome to your moive registration</h1>
+    <fieldset>
+
+        <legend>Contact details</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="youremail@mail.com">
+
+        <label for="phone">Phone Number:</label>
+        <input type="phone" id="phone" name="phone">
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose a movie</legend>
+        <label>Aladin
+            <input type="radio" name="favouriteMoive" value="Aladin">
+        </label>
+        <label>Avengers
+            <input type="radio" name="favouriteMoive" value="Avengers">
+        </label>
+        <label>Rocketman
+            <input type="radio" name="favouriteMoive" value="Rocketman">
+        </label>
+        <label>Spider-man
+            <input type="radio" name="favouriteMoive" value="Spider-man">
+        </label>
+        <label>Joker
+            <input type="radio" name="favouriteMoive" value="Joker">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose location</legend>
+        <label for="location"></label>
+        <select name="movieLocation" id="location">Cinema location
+            <option>--Choose Cinema--</option>
+            <option value="Iulius">Cinema City - Iulius Mall</option>
+            <option value="VIVO">Cinema City - VIVO</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Terms and conditions</legend>
+
+        <label>Accept terms and conditions
+            <input type="checkbox" name="termsAgreement">
+        </label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+    <h4>Enjoy our ultimate movie experience</h4>
+
+</body>
+
+</html>
