@@ -4,52 +4,32 @@
             Login
         </title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:700&display=swap" rel="stylesheet">
-        <style>
-.background {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/56/Perseid_meteor_and_Milky_Way_in_2009.jpg");
-    background-size:cover;
-    background-position: center; 
-}
-.inline {
-    display: inline;
-    background-color: 255 0 0; 
-}
-.block {
-    font-family: 'Noto Sans JP';
-    box-sizing: border-box;
-    border: 1px solid darkmagenta;
-    box-align: center;
-    display: block;
-    width: 310px;
-    height: 400px;
-    margin: 250px 100px 10px 700px;
-    padding: 60px;
-    box-shadow: 1px 1px 1px darkmagenta;
-}
-.lostpassword{
-    padding: 5px;
-}
-.login{
-    padding:10px;
-}
-        </style>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
 <body>
-    <div class="block">
+<div id="block">
     <div class="welcome">
     <h2>Welcome back!</h2>
     <h3>Log in to continue..</h3>
     </div>
-    <div class="login">
-            <input class="email" id="email" name="email" type="email" placeholder="Enter email" /></br>
-            <input class="password" id="password" name="password" type="password" placeholder="Enter password"/>
+    <div class="user">
+            <input type="text" name="email" autocomplete="off" required />
+            <label for="email" class="label-email">
+                <span class="content-email">Email</span>
+            </label>
     </div>
+    <div class="password">
+        <input type="password"  name="password" autocomplete="off" required/>
+        <label for="password" class="label-password">
+            <span class="content-password">Password</span>
+        </label>
+</div>
     <div class="lostpassword">
     <a class="password" href="lostpassword.html">Reset password</a>
     </div>
-    <div class="login">
-        <button class="submit" input="submit">Sign in</button>
+    <div class="button">
+        <button class="submit" input="user">Log in</button>
     </div>
 </div>
 </body>
-</html>7
+</html>
