@@ -1,0 +1,108 @@
+.background{ 
+    background-color: #f2f3f8;
+    background-size: cover; 
+}
+
+.inline{
+    display: inline;
+    background-color: #ffffff;
+}
+
+.block{
+    box-sizing:border-box;
+    display: block;
+    width: 350px;
+    height: 400px;
+    background-color:#ffffff;
+    margin: 0 auto; 
+    margin-top: 90px;
+    box-shadow:  1px 4px 6px 4px #dfdfe4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.heading1{
+    font-family: "montserrat", Helvetica, Serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: black;
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 0px;
+}
+
+.heading2{
+    font-family: "montserrat", Helvetica, Serif;
+    font-weight:600;
+    font-size: 13px;
+    color: #bebebe;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.email{
+    outline: none;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+}
+
+.email:focus{
+    opacity:1;
+    border-bottom: 2px solid #4255D8;
+    transition: 0.10s;
+}
+
+.password{
+    outline: none;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.password:focus{
+    opacity:1;
+    border-bottom: 2px solid #4255D8;
+    transition: 0.10s;
+}
+
+a{
+ color: #4255D8;   
+}
+
+button{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    background: #4255D8;
+    color: #ffffff;
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+}
+
+::placeholder {
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+img{
+    width: 23%;
+    height: 20%;
+    position:relative;
+    bottom:15px;
+    left:250px;
+    opacity: 0.8;
+}
+#form {
+    position:relative;
+    bottom:80px;
+}
