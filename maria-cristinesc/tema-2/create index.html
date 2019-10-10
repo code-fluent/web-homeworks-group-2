@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Log in web page</title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    </head>
+    <style>
+
+        .background{ 
+            background-color:#F5F5F5 ;
+        }
+        .box-container {
+                box-sizing: content-box;
+                display: block;
+                margin: 95px 300px 200px 470px; 
+                width: 335px; height: 450px;
+                padding: 10px 10px 20px 30px;
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                
+               
+            }
+
+            .welcomeText{
+            font-family:'Cabin', sans-serif;
+            letter-spacing: 1px;
+            font-size:25px; 
+            font-weight:bold;
+            text-align: left; 
+            padding-top: 15px;
+            
+             }
+
+            .log-inText{
+                font-family:'Cabin', sans-serif;
+                letter-spacing:1px;
+                font-size: 17px;
+                color:#9d9d9d ; 
+                padding-top:10px;
+                
+            }
+
+            .box-container input {
+            display: block;
+            font-family:'Cabin', sans-serif;
+            text-align: left;
+            font-size: 13px;
+            box-sizing: border-box;
+            margin: 25px 5px 10px 20px  ;
+            padding: 10px;
+            border: 0px;
+            border-bottom: 2px solid #c4c4c4;
+            outline: none;
+            letter-spacing: 2px;
+            
+
+        }
+        input:focus {
+            border-color:#4155d8;
+            
+            }
+    
+
+        button {
+            display: block;
+            width: 305px;
+            font-family:'Cabin', sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color:white;
+            background: #4455d7;
+            padding:10px 10px 10px 10px;
+            margin: 50px 3px;
+            border-radius: 7px;
+            
+            
+        }
+        .box-container input,
+       a {display: block;
+            margin: 35px 2px;
+            width: 310px;
+            padding-left: 2px;
+            padding-right:2px;
+
+        }
+            
+    </style>
+
+    <body>
+            <body class="background"></body>
+            <div class="box-container">
+                <div>
+                    <img width="70px" src="http://clipart-library.com/images/8cE67xaAi.gif"/>
+                </div>
+            <div class="welcomeText">Welcome back!</div>
+            <div class="log-inText">Log in to continue.</div>
+
+            <div class="form">
+                <form action="action_page.php" method="POST">
+                <label for="email"></label>
+                <input type="email" id="email"name="email" placeholder=Email required autofocus>
+
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Password" required autofocus>
+                
+                <a href="https://">Forgot your password?</a>
+                <button type="submit">Sign in</button>
+                </form>
+            </div>
+            
+    </body>
+</html>
