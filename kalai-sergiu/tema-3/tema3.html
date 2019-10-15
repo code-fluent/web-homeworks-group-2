@@ -2,25 +2,36 @@
     <head>
         <title>Positions Tema 3</title>
         <style>
+        
         .box1{
+            display: flex;
+            justify-content: space-between;
             background-color: red;
-            flex-direction: column;
             top:0;
             left: 0;
             bottom: 0;
             width: 200px;
-            position: absolute;
+            position: fixed;
 
         }
         .box2{
-            position: relative;
-            flex-direction: column;
-            justify-content: flex-start;
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            left: 90vw;
+            position: fixed;
+            background-color: lightblue;
             top: 0;
             bottom: 0;
-            left: 0;
-            height: 100px;
-            background-color: violet;
+        }
+        box4{
+            display: flex;
+            align-items: flex-start;
+            height: 200px;
+            background-color: green;
+            top: 0;
+            bottom: 0;
+            position: fixed;
         }
         </style>
     </head>
