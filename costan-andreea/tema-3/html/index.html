@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            .box-1 {
+                position: fixed;
+                top: 50px;
+                left: 0;
+                background-color:green;
+                width: 200px;
+                bottom: 50;
+                
+            }
+
+            .box-3 {
+                position: fixed;
+                top: 50px;
+                right: 0;
+                background-color:salmon;
+                width: 200px;
+                bottom: 50;
+            }
+
+            .box-2 {
+                position: fixed;
+                top: 150px;
+                left: 1600px;
+                bottom: 50;
+                background-color:silver;
+                width: calc(100vw - 400px);
+            }
+             nav {
+                 position: fixed;
+                 height: 50px;
+                 margin: 0;
+                 background-color: blue;
+                 width: 100%;
+                 top: 0;
+                 left: 0;
+             }
+              .box-5 {
+                  position: fixed;
+                  height: 60px;
+                  background:darkgoldenrod;
+                  width: 150%;
+                  grid-area: left bottom;
+                  top: 700px;
+                  left: 0px;
+              }
+            
+        </style>
+    </head>
+    <body>
+        <nav></nav>
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="nav"></div>
+        <div class="box-5"></div>
+</body>
+</html>
