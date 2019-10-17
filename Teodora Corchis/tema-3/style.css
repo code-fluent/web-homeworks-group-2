@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    position: fixed;
+}
+
+.box1{
+    background-color: #004C62;
+    width: 100vw;
+    height: 50px;
+}
+
+.box2{
+    background-color:#155A3E;
+    height: 85vh;
+    width: 200px;
+}
+
+.box3{
+    background-color:#E2CBBB;
+    flex-grow: 1;
+}
+
+.box4{
+    background-color: #FF6B57;
+    height: 85vh;
+    width: 200px;
+}
+
+.box5{
+    background-color: #EEA94E;
+    width: 100vw;
+    height: 50px;
+}
