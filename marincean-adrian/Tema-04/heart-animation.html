@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heartbeat Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #1f1f1f;
+            box-sizing: border-box;
+        }
+
+        body:before {
+            position: absolute;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, .2);
+        }
+
+        /* .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #1f1f1f;
+            transform: translate(-50%, -50%);
+            padding: 100px;
+            border: 5px solid white;
+            border-radius: 100%;
+            box-shadow: 20px 20px 45px rgba(0, 0, 0, .4);
+            z-index: 1;
+            overflow: hidden;
+        } */
+
+        .center {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-color: #F34236;
+            box-shadow: 2px 2px 2px 1px rgba(240, 22, 22, 0.5);
+        }
+
+         .heart i {
+            position: relative;
+            margin: auto;
+            /* width: 140px;
+            height: 140px; */
+            color: white; 
+            transform: translate(180px, 180px);
+            animation: heartbeat 1.2s linear infinite;
+            /* border-radius: 50%; */
+            font-size: 140px;
+        }
+
+
+        @keyframes heartbeat {
+            0% {
+                transform: translate(180px, 180px) scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 254, 0.979);
+  
+            }
+
+            25% {
+                transform: translate(180px, 180px) scale(1);
+                box-shadow: 0 0 0 0 rgb(225, 225, 254);
+
+            }
+
+            30% {
+                transform: translate(180px, 180px) scale(1.4);
+                box-shadow: 0 0 0 0 rgb(225, 225, 254);
+
+
+            }
+
+            50% {
+                transform: translate(180px, 180px) scale(1.2);
+                box-shadow: 0 0 0 30px rgb(225, 225, 254);
+
+
+  
+            }
+
+            70% {
+                transform: translate(180px, 180px) scale(1.4);
+                box-shadow: 0 0 0 30px rgb(225, 225, 254);
+
+
+            }
+
+            90% {
+                transform: translate(180px, 180px) scale(1);
+                /* box-shadow: 0 0 0 0 rgb(225, 225, 254); */
+
+            }
+
+            100% {
+                transform: translate(180px, 180px) scale(1);
+                /* box-shadow: 0 0 0 0 rgb(225, 225, 254); */
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="heart">
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+</body>
+
+</html>
