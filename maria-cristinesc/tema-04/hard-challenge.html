@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hard-challenge</title>
+        <!--I tried :D-->
+        <style>
+            .container {
+              
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content:center;
+                align-items: center;
+                width:350px;
+                height:350px;
+                margin:150px auto;
+                background-color: beige;
+                border-radius:300px;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+            }
+            .hour {
+                position:absolute;
+                width:140px;
+                height:6px;
+                background-color: black;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                animation:example 43200s linear infinite;
+            }
+
+           .minutes{
+                position:absolute;
+                width:180px;
+                height:4px;
+                background-color:black;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                animation:example 3600s linear infinite;
+           }
+           .circle{
+                position:absolute;
+                width:20px;
+                height:20px;
+                
+                background-color:transparent;
+                border: 2px solid black;
+                border-radius:15px;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                background-position: center;
+                
+           }
+           .seconds {
+                position: absolute;
+                width:150px;
+                height:2px;
+                background-color: red;
+                background-position: center;
+                animation:example 60s linear infinite;
+            }
+
+           @keyframes example {
+          
+        0% {
+         transform:none;
+        }
+
+        25% {
+            transform: rotate(45deg);
+            
+        }
+        50%{
+            transform: rotate(90deg);
+
+        }
+        75%{
+            transform: rotate(135deg);
+        }
+  
+        100% {
+        
+            transform:rotate(180deg);
+  }
+        }
+          
+  
+
+        </style>
+    </head>
+    <body>
+<div class="container">
+<div class="hour"></div>
+<div class="minutes"></div>
+<div class="circle"></div>
+<div class="seconds"></div>
+</div>
+    </body>
+</html>
