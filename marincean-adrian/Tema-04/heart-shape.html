@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heart shape</title>
+    <style>
+
+        body {
+            background: #404143;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+
+        .heart-shape {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(250, 184, 66, 1);
+        }
+
+        /* Long version where we take every pseudo-element in part */
+        /* .heart-shape::before {
+            position: absolute;
+            bottom: 0px;
+            left: -100px;
+            width: 200px;
+            height: 200px;
+            content: '';
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: rgba(250, 184, 66, 0.8);
+        }
+
+        .heart-shape::after {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            content: '';
+            top: -100px;
+            right: 0px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: rgba(250, 184, 66, 0.8);
+        } */
+
+        .heart-shape::before,
+        .heart-shape::after {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            content: '';
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: rgba(250, 184, 66, 1);
+        }
+
+        .heart-shape:before {
+            bottom: 0px;
+            left: -50px;
+        }
+
+        .heart-shape:after {
+            top: -50px;
+            right: 0px;
+        }
+
+        .heart-shape {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            /* transform: translate(200px, 100px); */
+           animation: heartbeat 1.2s ease-out infinite;
+        }
+
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1) rotate(45deg);
+                /* box-shadow: 0 0 0 0 rgba(214, 163, 75, 0); */
+            }
+
+            25% {
+                transform: scale(1.2) rotate(45deg);
+                /* box-shadow: 0 0 0 0 rgba(214, 163, 75, 0); */
+            }
+
+            35% {
+                transform: scale(1.4) rotate(45deg);
+                /* box-shadow: 0 0 0 50px rgba(214, 163, 75, 0.2); */
+            }
+
+            50% {
+                transform: scale(1.2) rotate(45deg);
+            }
+
+            75% {
+                transform: scale(1) rotate(45deg);
+            }
+
+            100% {
+                transform: scale(0.9) rotate(45deg);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="heart-shape"></div>
+</body>
+
+</html>
