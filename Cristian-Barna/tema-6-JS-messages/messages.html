@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Messages</title>
+        <script>
+            function myFunction(){
+                var d = new Date("July 21, 2019 19:00:00");
+                var n = d.getHours();
+                console.log("Este ora " + n);
+
+                if( n < 12){
+                    console.log("Good morning!")
+                } else
+                if (n > 12 && n < 18){
+                    console.log("Good afternoon!");
+                } else
+                if (n > 18){
+                    console.log("Good evening!");
+                }
+            }
+            myFunction();
+        </script>
+    </head>
+</html>
