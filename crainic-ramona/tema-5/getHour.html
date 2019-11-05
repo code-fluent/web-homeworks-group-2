@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Get Hour</title>
+        <script>
+
+        var d = new Date();
+        currentTime = d.getHours();
+
+            if (currentTime < 12) {
+                console.log("Good morning!");
+            } else if (currentTime >= 12 && currentTime < 6) {
+                console.log("Good afternoon!");
+            } else if (currentTime > 6) {
+                console.log("Good evening!");
+            }
+        
+        </script>
+    </head>
+</html>
