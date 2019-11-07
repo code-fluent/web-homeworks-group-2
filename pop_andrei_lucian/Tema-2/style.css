@@ -1,0 +1,103 @@
+.background {
+    background-color: #F2F3F8;
+}
+
+.block {
+display: block;
+box-sizing: border-box;
+background-color: white;
+width: 400px;
+height: 450px;
+margin: 0 auto;
+margin-top: 100px;
+padding: 30px;
+box-shadow: 2px 4px 7px 4px #E9EAEF;
+border-radius: 6px;
+
+}
+img {
+    width: 23%;
+    height: 20%;
+
+}
+
+#heading1 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 2px;
+
+}
+
+#heading2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12px;
+    color: #B0B0B0;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 0px;
+
+}
+
+.email {
+    opacity: 0.8;
+    width:100%;
+    display: block;
+    outline: none;
+    /* border: transparent; */
+    margin-top: 35px;
+    font-size: 16px;
+    font: bold;
+    border-top:transparent;
+    border-left:transparent;
+    border-right:transparent;
+    transition: 0.10s;
+    border-bottom: 1px solid grey;
+   
+}
+
+.email:focus {
+    opacity: 1;
+    border-bottom: 2px solid rgb(123, 123, 236);
+    transition: 0.10s;
+
+}
+
+.password {
+    width: 100%;
+    display: block;
+    outline: none;
+    border: transparent;
+    margin-top: 30px;
+    font-size: 16px;
+    transition: 0.10s;
+    border-top:transparent;
+    border-left:transparent;
+    border-right:transparent;
+    border-bottom: 1px solid grey;
+}
+
+.password:focus {
+    border-bottom: 2px solid rgb(123, 123, 236);
+    transition: 0.10s;
+}
+    
+a {
+    border: none;
+    background: none;
+    color: #5B6BDE;
+    position: relative;
+    top: 20px;
+
+}
+
+button {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    
+
+
+}
