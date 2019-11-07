@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Convert</title>
+<script language="JavaScript">
+ 
+
+  function mConverter() {
+document.converter.inch.value = document.converter.m.value / 2.54
+document.converter.feet.value = document.converter.m.value / 30.48
+}
+function inchConverter(){
+document.converter.m.value = document.converter.inch.value * 2.54
+document.converter.feet.value = document.converter.inch.value / 12
+}
+</script>
+</head>
+<body>
+    <form name="converter">
+    m: <input type="text" name="m" onChange="mConverter()"><br />
+    Inch: <input type="text" name="inch" onChange="inchConverter()"><br />
+    <input type="button" value="Convert!" />
+    </form>
+</body>
+
+</html>
