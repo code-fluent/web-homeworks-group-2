@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Converter Meters to Inches</title>
+    <body>
+            <p>
+            <label>Meters</label>
+            <input id="inputMeters" type="number" placeholder="meters"
+            oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+            </p>
+            <p>Inches: <span id="outputInches"></span></p>
+            <script>
+            function LengthConverter(valNum) {
+                document.getElementById("outputInches").innerHTML=valNum*39.370;
+            } 
+        </script>
+    </body>
+</html>
