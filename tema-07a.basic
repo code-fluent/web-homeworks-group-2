@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>tema 07a basic</title>
+    </head>
+        <script>
+            var array = [-2, 10, 2, 4, -6, 3];
+			var sum = 0;
+
+		 array.forEach(function(array) {
+				if (array > 0) {
+					sum = sum + array;
+				}
+			})
+            console.log(sum);
+        </script>
+    
+</html>
