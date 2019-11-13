@@ -1,0 +1,30 @@
+<html>
+  <head>
+<title>tema-07b.basic</title>
+  </head>
+  <script>
+    var animal = {
+      type: "dog",
+      name: "Rex",
+      totalGut: 0,
+      startEat: function() {
+        this.eatStarted = true;
+        console.log("Eat started.");
+      },
+      stopEat: function() {
+        this.eatStarted = false;
+        console.log("Eat stopped.");
+      },
+      meat: function(kg) {
+        this.totalGut = this.totalGut + kg;
+        console.log("Meat in total", this.totalGut);
+      }
+    };
+    console.log(animal.name);
+    animal.startEat();
+    animal.meat(1);
+    animal.meat(2);
+    animal.meat(1);
+    animal.stopEat();
+  </script>
+</html>
