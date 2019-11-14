@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+           var animal = {
+               type: "Dog",
+               name: "Rex",
+               gut: ["meat", "bones", "pedigree", "eggs", "fish"],
+               
+               eat: function(food){
+                  this.gut= this.gut + food;
+                  console.log("Rex is eating", this.gut);
+
+              },
+              stopEating: function(food) {
+                  this.eat = false;
+                  console.log ("Gut of Rex is full");
+              },
+              
+
+           };
+           console.log (animal.type);
+           
+           animal.eat("fish");
+           animal.eat("meat");
+           animal.eat("pedigree");
+           animal.eat("bones");
+           animal.eat("eggs");
+           animal.stopEating();
+
+
+      </script>
+    </head>
+</html>
