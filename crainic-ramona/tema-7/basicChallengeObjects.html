@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Animal</title>
+        <script>
+            var animal = {
+                type: "Dog",
+                name: "Max",
+                foodInTheGut: "",
+                eatFood: false,
+                startedEating: function(){
+                    this.eatFood = true;
+                    console.log("Max started eating.");
+                },
+                stoppedEating: function(){
+                    this.eatFood = false;
+                    console.log("Max stoppend eating.");
+                },
+                start: function(food){
+                    this.foodInTheGut = this.foodInTheGut + food;
+                    console.log("Max ate", this.foodInTheGut, " ");
+                }
+            };
+            console.log(animal.type);
+
+            animal.startedEating();
+            animal.start("bones");
+            animal.start(", meat ");
+            animal.start("and fish");
+            animal.stoppedEating();
+        </script>
+    </head>
+</html>
