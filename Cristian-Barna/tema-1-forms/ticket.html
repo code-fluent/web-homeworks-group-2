@@ -1,0 +1,52 @@
+<html>
+    <head>
+            <title>Ticket</title>
+    </head>
+    <body>
+       
+        <!--First fieldset-->
+        <fieldset>
+                <legend>Contact details</legend>
+
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" placeholder="First Name"/>
+
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last Name"/>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="E-Mail"/>
+
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="phone" placeholder="Phone"/>
+        </fieldset>
+        
+        <!--Second fieldset-->
+        <fieldset>
+            <legend>Choose a movie</legend>
+            <label><input name="movie" type="radio" value="a"/>Godzilla</label>
+            <label><input name="movie" type="radio" value="b"/>Aladin</label>
+            <label><input name="movie" type="radio" value="c"/>Rocketman</label>
+            <label><input name="movie" type="radio" value="d"/>Spider-man</label>
+            <label><input name="movie" type="radio" value="e"/>Godzilla</label>
+        </fieldset>
+       
+        <!--Third fieldset-->
+        <fieldset>
+            <legend>Choose location</legend>
+            <select>
+                <option>Please select location</option>
+                <option value="I">Cinema City - Iulius</option>
+                <option value="V">Cinema City - Vivo</option>
+            </select>
+        </fieldset>
+     
+        <!--Fourth fieldset-->
+        <fieldset>
+            <legend>Terms and conditions</legend>
+            <label><input id="acceptTerms" name="acceptTerms" type="checkbox" />Accept terms. </label>
+        </fieldset>
+        <button type="submit">Buy tickets</button>
+
+    </body>
+</html>
