@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Stopwatch</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet"/>
+
+        <style>
+            * {
+            box-sizing: border-box;
+            font-family: Montserrat;
+            }
+
+            body {
+                margin: 0;
+                background-color:darkgrey
+            }
+
+            .container{
+            text-align: center;
+            border-radius: 3px;
+            width:350px;
+            height: 150px;
+            margin: 150px 480px 40px 450px;
+            padding: 30px; 
+            background-color:white;
+            border: 5px solid darkgrey;
+            border-width: 0 0 0 0;
+            box-shadow:0px 0px 5px 5px rgb(232,232,232); 
+            }
+        
+            .button1{
+            width:100px;
+            height: 35px;
+            border-radius: 5px;
+            line-height: 5px;
+            background-color:green;
+            color: black;
+            font-size: 18px;
+            margin-bottom: 100px;
+            }
+
+            .button2{
+            width:100px;
+            height: 35px;
+            border-radius: 5px;
+            line-height: 5px;
+            background-color:tomato;
+            color: black;
+            font-size: 18px;
+            margin-bottom: 100px;
+            }
+
+            .timer{
+                margin: 150px 480px 40px 450px;
+                font-size: 30px;
+                margin: 5px 0 20px 0;
+                color:black;
+            }
+        </style>
+
+        <body>
+            <div class="container">
+                <div>
+                    <h1 class = "timer" id="timer"><time>00:00:00</time></h1> 
+                </div>
+
+                <div id="button">
+                    <button id="Start" class="button1">Start!</button>
+                    <button id="Stop" class="button2">Stop!</button>   
+                </div>
+            </div>          
+        </body>
+        
+        <script>
+            var h1 = document.getElementsByTagName("h1")[0],
+            start = document.getElementById("Start"),
+            stop = document.getElementById("Stop"),
+            seconds = 0, minutes = 0, hours = 0,
+            t;
+
+        function add() {
+        seconds++;
+        if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+            }
+        }
+    
+        h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+        timer();
+        }
+        function timer() {
+        t = setTimeout(add, 1000);
+        }
+        timer();
+
+        /* Start button */
+        start.onclick = timer;
+
+        /* Stop button */
+        stop.onclick = function() {
+        clearTimeout(t);
+        h1.textContent = "00:00:00";
+        seconds = 0; minutes = 0; hours = 0;
+        }
+
+        </script>
+    </head>
+</html>
