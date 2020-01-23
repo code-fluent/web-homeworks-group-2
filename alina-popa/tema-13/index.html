@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>tema-13</title>
+    <script>
+        var person = {
+            firstNames: ['John', 'Matthew', 'Thomas', 'Christian', 'David'],
+            lastNames: ['Smith', 'Pitt', 'Cruise', 'Robinson',],
+        }
+        console.log(person);
+        let john = { name: "John", surname: "Cruise", id: 1 };
+let thomas = { name: "Thomas", surname: "Smith", id: 2 };
+let david = { name: "David", surname: "Pitt", id: 3 };
+let christian={name:"Christian",surname:"Smith", id:4};
+let users = [ john, thomas, david, christian ];
+
+let usersMapped = users.map(user => ({
+  fullName: `${user.name} ${user.surname}`,
+  id: user.id
+}));
+console.log(usersMapped);
+    </script>
+</head>
+</html>
