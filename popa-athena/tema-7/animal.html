@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>How much food eats Rex in a day</title>
+        <script>
+        var animal = {
+            type: "dog",
+            name: "Rex",
+            gut: ['bones', 'meat'], 
+            totalFood: 0,
+            foodEatedMorning: false,
+            eatBreakfast: function () {
+                this.foodEatedMorning = true;
+                console.log("Eated his breakfast ");
+            },
+            eatLunch: function () {
+                this.foodEatedMorning = false,
+                console.log("Eated his lunch");
+            },
+            gut: function(food) {
+                this.totalFood = this.totalFood + food;
+                console.log("food in total", this.totalFood);
+            }
+        };
+        console.log(animal.name);
+        animal.eatBreakfast();
+        animal.gut(1, 'meat');
+        animal.eatLunch();
+        animal.gut(2, 'bones');
+        </script>
+    </head>
+</html>

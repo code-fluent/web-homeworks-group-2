@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Converter Celsius to Fahrenheit</title>
+    </head>
+        <script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML = (valNum*1.8)+32;
+}
+        </script>
+        <body>
+                <p>
+                <label>Celsius</label>
+                        <input id ="inputCelsius" type="number" placeholder="Celsius"
+                        oninput="temperatureConverter(this.value)"
+                        onchange="temperatureConverter(this.value)">
+                      </p>
+                      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+        </body>
+    </body>
+</html>

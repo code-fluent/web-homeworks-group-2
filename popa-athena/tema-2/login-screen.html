@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Login screen</title>
+       <body>
+        <style>
+            body {
+        background-color: whitesmoke;
+      }
+      .block {
+            font-family:'Montserrat', sans-serif;           
+            height: 400px;
+            width: 300px;
+            background-color:white;
+            display:block;
+            box-shadow:grey;
+            padding-top: 10px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            top: 100px;
+            left: 500px;
+
+        }
+      .welcomeText {
+        color:black;
+        line-height: 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-align:initial;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .login {
+        color:grey;
+        line-height:10px;
+        font-family: 'Lato', sans-serif;
+        font-size:16px;
+        text-align:left;
+      }
+      .passwordF {
+          color:blue;
+          padding:90px, 10px, 10px, 80px;
+          display:inline, block;
+          font-size:15px;
+      }
+      .button {
+          color:white;
+          background-color:blue;
+          font-family: 'Montserrat', sans-serif;
+          font-size:12px;
+          height:40;
+          width:280px;
+          line-height:40px;
+      }
+      input[type="email"]{
+          width:100%;
+          padding:30px 1px 10px;
+          display:inline-block;
+          border-bottom:2px solid blue;
+          border-top:0ch;
+          border-left:0ch;
+          border-right:0ch;
+          box-sizing:border-box;
+       } 
+       input[type="password"]{
+          width:100%;
+          padding:30px 1px 10px;
+          display:inline-block;
+          border-bottom:1px solid grey;
+          border-top:0ch;
+          border-left:0ch;
+          border-right:0ch;
+          box-sizing:border-box;
+          text-decoration-color: black;
+       } 
+       #email::placeholder{
+           font-family:'Montserrat', sans-serif;
+           color:black;
+           font-weight:bold;
+       }
+       #password::placeholder{
+           font-family:'Montserrat', sans-serif;
+           color:grey;
+           font-weight:bold;
+       }
+        </style>
+              </body>
+    </head>
+    <body>
+            <div class="block">
+        <img 
+        width="60"
+        src="https://www.telenor.no/binaries/bedrift/arbeidsverktoy/office365/Microsoft-To-Do_256x256.png"/>
+    <div>
+        <h1 id="welcome" class="welcomeText">Welcome back!</h1>
+    </div>
+    <div>
+        <h2 id="login" class="login">Log in to continue.</h2>
+    </div>
+        <label for="email"> 
+        <input id="email" 
+        name="email"
+        type="email"
+        placeholder="john@gmail.com"/>
+        <label for="password">
+        <input id="password"
+        name="password"
+        type="password"
+        placeholder="Password"/>
+    <div>
+        <a class="passwordF"
+        target="_blank"
+        id="passwordF"
+        href="www.password.com">Forgot your password?</a>
+    </div>
+    <div>
+        <button id="button" class="button">Sign In</button>
+    </div>
+</div>
+    </body>
+</html>
