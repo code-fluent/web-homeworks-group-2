@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse numbers</title>
+    </head>
+<body>
+
+<p>Click the button to reverse the order of the elements in the array.</p>
+
+<button onclick="myFunction()">Click it</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [1,2,3,4,5];
+document.getElementById("demo").innerHTML = numbers;
+
+function myFunction() {
+  numbers.reverse();
+  document.getElementById("demo").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>
