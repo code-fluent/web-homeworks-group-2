@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Screenexample
+        </title>
+        <style>
+
+ .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin:auto;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  }
+.header{
+    background:blueviolet;
+    height:50px;
+
+}
+.footer{
+    background:gold;
+    height:50px;
+
+}
+
+.main {
+     background-color: whitesmoke;
+    height:500px;
+}
+
+.aside-1{
+background-color:violet;
+}
+
+.aside-2{
+    background-color:tomato;
+}
+
+.aside{flex:1 0 0;}
+
+
+
+  .main { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+
+
+
+        </style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="header"></div>    
+        <div class="main"></div>
+
+        <div class="aside aside-1"></div>
+        <div class="aside aside-2"></div>
+        <div class="footer"></div>
+    
+</html>

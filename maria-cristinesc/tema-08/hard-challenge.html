@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Hard-challenge</title>
+        <script>
+       
+        const today=new Date();
+const nextYear=new Date(today.getFullYear(), 11, 31);
+if (today.getMonth()==11 && today.getDate()>31) 
+{
+nextYear.setFullYear(nextYear.getFullYear()+1); 
+}  
+const one_day=1000*60*60*24;
+console.log(`days: ${Math.ceil((nextYear.getTime()-today.getTime())/(one_day))}`);
+
+
+        </script>
+    </head>
+</html>
