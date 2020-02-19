@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Beating Heart Animation</title>
+    </head>
+    <style>
+        .background{
+            background-color: tomato;
+        }
+        .heart{
+            width: 300px;
+            height: 250px;
+            margin: 200px 0 0 500px;
+            animation:heartbeat 8s linear infinite;
+            filter:drop-shadow(5px 5px 30px black);
+            transition: drop-shadow 500ms;
+        }
+
+     
+        @keyframes heartbeat{
+            0%{
+            transform: scale( .75 );
+            }
+            20%{
+            transform: scale( 1 );
+            }
+            40%{
+            transform: scale( .75 );
+            }
+            60%{
+            transform: scale( 1 );
+            }
+            80%{
+            transform: scale( .75 );
+            }
+            100%{
+            transform: scale( .75 );
+            }
+        }
+        
+    </style>
+    <body class="background">
+        <div id="heart">
+            <img class="heart" src="C:\Users\PresarioCQ57\Downloads\output.png">
+        </div>
+    </body>
+</html>

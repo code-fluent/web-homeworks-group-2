@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Full Name</title>
+        <script>
+            
+            var firstName = ['John', 'Matthew', 'Thomas', 'Christian', 'David'];
+            var lastName = ['Smith', 'Pitt', 'Cruise', 'Robinson', 'Beckham'];
+            var fullName = []
+            for (var i = 0; i < firstName.length; i++) {
+                for(var j = 0; j < lastName.length; j++){
+                    fullName = fullName + Math.round(Math.random() * firstName.length[i] + " " + lastName.length[j])
+                }; 
+            };
+            console.log(fullName);
+
+            // const fullName = []
+            //     for (var i = 0; i < firstName.length; i++){
+            //         for (var j = 0; j < lastName.length; j++){
+            //     fullName.push(firstName[i] + " " + lastName[j]);
+            //         }
+            //     }
+            //     console.log(fullName);
+
+
+        </script>
+
+    </head>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Sum of positive numbers</title>
+        <script>
+
+        var array = [1,2,7,4,9,-1,-2,-1,-4,-5];
+        var positiveNumbers = array.filter(number => {
+        return number >= 0;
+        });
+
+        console.log(positiveNumbers);
+
+        var sum = 0;
+            for (var i = 0; i < positiveNumbers.length; i++) {
+                sum = sum + positiveNumbers[i];
+            };
+
+        console.log(sum);
+
+    </script>
+    </head>
+</html>
