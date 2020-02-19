@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Tema-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        body {
+            color: white;
+            margin:0;
+            padding:0;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family:"Montserrat", Helvetica, serif;
+            background-image:url(https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+            background-size: cover;
+            background-position: center center;
+        }
+        .login-box {
+            
+            color:white;
+            width: 300px;
+            height:400px;
+            background-color:rgba(0, 0, 0, 0.4);
+            top: 50%; 
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px, 30px;
+            text-align: center;
+            border-radius:30px;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+        }
+        h2 {
+            
+            margin: 5px;
+            padding:10 0 0px;
+            text-align: center;
+        }
+        h5 {
+            
+            margin:0;
+            padding:0 10 0px;
+            margin-bottom: 60px;
+            font-weight:100;
+            text-align: left;
+            color:rgb(204, 200, 200);
+        }
+        
+        .login-box input{
+            width: 75%;
+            margin-bottom: 15px;
+        }
+        .login-box input[type="text"], input[type=password]
+        {   color:white;
+            border: none;
+            background-color:rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid red;
+            background: transparent;
+            outline: none;
+            height: 30px;
+            font-size: 15px;
+            
+            
+        }
+        .login-box input[type=submit]
+        {
+            border:none;
+            outline:none;
+            height:35px;
+            width: 50%;
+            background-color:rgb(5, 197, 5);
+            border-radius:12px;
+            text-align: center;
+            padding:0 10 0px;
+            margin-bottom: 45px;
+            margin-top:30px;
+        }
+        .login-box input[type=submit]:hover {
+            background-color: rgb(41, 236, 41);
+            color:white;
+        }
+        
+        
+        ::placeholder {
+            color:white;
+        }
+        a {
+            
+            color:rgb(5, 197, 5);
+            text-decoration: none; 
+            text-align: left;
+            font-size:13px;
+        }
+        a:hover{
+            color:rgb(41, 236, 41);
+        }
+        
+    </style>
+    <body>
+        <div class="login-box">
+            <h2>Welcome back!</h2>
+            <h5>Log in to continue...</h5>
+            <form>
+                <i class="fa fa-user icon"></i>
+                <input id="email" name="name" type="text" placeholder="Name" /><br>
+                <i class="fa fa-lock"></i>
+                <input id="password" name="password" type="password" placeholder="Password" />
+                
+                <input type="submit" name=submit value="Sign in">
+            </form>
+            <a href="www.yahoo.com">Forgot your password?</a><br>
+            <a href="www.blabla.com">Don't have account?</a>
+        </div>
+        
+    </body>
+</head>
+</html>

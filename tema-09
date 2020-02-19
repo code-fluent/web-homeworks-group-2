@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>Tema 09</title>
+        <style>
+        body {
+            margin: 0;
+        }
+         .input {
+             width: 100%;
+             margin-bottom: 20px;
+             font-size: 18px;
+             padding: 8px 16px;
+             outline: none;
+         }
+
+         .input:focus{
+               border-color: #6600ee;
+         }
+         .container {
+             justify-content: flex-start;
+             display: flex;
+             flex-wrap: wrap;
+         }
+         .image {
+             width: calc((100% - 80px) / 4);
+             margin: 10px;
+         }
+         @media only screen and (max-width: 768px) {
+        .container {
+          width: 709px;
+        }
+        .box {
+          width: 223px;
+          height: 178px;
+        }
+      }
+      @media only screen and (max-width: 375px) {
+        .container {
+          width: 100%;
+        }
+        .box {
+          width: 100vw;
+          height: 78vw;
+        }
+      }
+        </style>
+    </head>
+    <body>
+        <input id="search" class="input" placeholder="Search..."/>
+
+        <div class="container" id = "container"> 
+                
+                <img class="image" src="https://media0.giphy.com/media/iOdDgwtioHQaNdAQvC/giphy.webp?cid=790b7611a7a65ac11e9543e2bae9f6d83be6308043443d51&rid=giphy.webp"/>
+                <img class="image" src="https://media0.giphy.com/media/iOdDgwtioHQaNdAQvC/giphy.webp?cid=790b7611a7a65ac11e9543e2bae9f6d83be6308043443d51&rid=giphy.webp"/>
+                <img class="image" src="https://media0.giphy.com/media/iOdDgwtioHQaNdAQvC/giphy.webp?cid=790b7611a7a65ac11e9543e2bae9f6d83be6308043443d51&rid=giphy.webp"/>
+                <img class="image" src="https://media0.giphy.com/media/iOdDgwtioHQaNdAQvC/giphy.webp?cid=790b7611a7a65ac11e9543e2bae9f6d83be6308043443d51&rid=giphy.webp"/>
+                <img class="image" src="https://media0.giphy.com/media/iOdDgwtioHQaNdAQvC/giphy.webp?cid=790b7611a7a65ac11e9543e2bae9f6d83be6308043443d51&rid=giphy.webp"/>
+                <img class="image" src="https://media0.giphy.com/media/iOdDgwtioHQaNdAQvC/giphy.webp?cid=790b7611a7a65ac11e9543e2bae9f6d83be6308043443d51&rid=giphy.webp"/>
+               
+            </div>
+        <script>
+            const inputElement = document.getElementById("search");
+            const containerElement =document.getElementById("container")
+            inputElement.addEventListener("keypress", event => {
+                if (event.code === "Enter") {
+                    const text = inputElement.value;
+                    const promise = fetch
+                    (`https://18z9lalk4f.execute-api.us-east-1.amazonaws.com/dev/giphy/search?search=${text}`);
+                     
+                     promise.then(response => {
+                         return response.json();
+                     })
+                     .then(urls => {
+                        containerElement.innertHTML = "";
+                        urls.forEach(url => {
+                            const image = document.createElement("IMG");
+                            image.setAttribute("class", "image");
+                            image.setAttribute("src", url);
+                            container.appendChild(image);
+                        });
+
+                     })
+                     .catch(error => {
+                         console.log(error);
+                     });
+
+                }
+            });
+        </script>
+    </body>
+</html>
