@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>The amazing tool for searching memes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            .title {
+            margin-left: 40%;
+            font-size: 56px;
+            background: -webkit-linear-gradient(black,crimson);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
+
+            .input{
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 8px 16px;
+                font-size: 18px;
+                outline: none;
+
+            }
+
+            .input:focus{
+                border-color: #6600ee;
+            }
+
+            .container{
+                display: flex;
+                justify-content: center;
+                flex-wrap:wrap;
+            }
+
+            .image{
+                width: calc((100% - 100px) / 3);
+                height: 400px;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="title">MEMEpedia</h1>
+        <input id="search" class = "input" placeholder = "Search for amazing memes..."/>
+
+        <div class = "container" id="container">
+            <img 
+            class = "image" 
+            src = "https://media2.giphy.com/media/JQtjrjz75ttYY/giphy.gif"/>
+
+            <img 
+            class = "image" 
+            src = "https://media2.giphy.com/media/JQtjrjz75ttYY/giphy.gif"/>
+
+            <img 
+            class = "image" 
+            src = "https://media2.giphy.com/media/JQtjrjz75ttYY/giphy.gif"/>
+
+            <img 
+            class = "image" 
+            src = "https://media2.giphy.com/media/JQtjrjz75ttYY/giphy.gif"/>
+
+            <img 
+            class = "image" 
+            src = "https://media2.giphy.com/media/JQtjrjz75ttYY/giphy.gif"/>
+
+            <img 
+            class = "image" 
+            src = "https://media2.giphy.com/media/JQtjrjz75ttYY/giphy.gif"/>
+
+        </div>
+
+        <script>
+            const inputElement = document.getElementById("search");
+            const containerElement = document.getElementById("container");
+            inputElement.addEventListener("keypress", event => {
+                if (event.code === "Enter") {
+                    const text = inputElement.value;
+                    const promise = fetch(
+                        `https://18z9lalk4f.execute-api.us-east-1.amazonaws.com/dev/giphy/search?search=${text}`
+                        );
+
+                promise.then(response => {
+                    return response.json();
+                }).then(urls =>{
+                    containerElement.innerHTML = "";
+                    urls.forEach(url => {
+                        const image = document.createElement("IMG");
+                        image.setAttribute("class", "image");
+                        image.setAttribute("src", url);
+                        container.appendChild(image);
+                    });
+
+                }).catch(error =>{
+                    console.log(error);
+                });
+              }
+            });
+
+        </script>
+    </body>
+</html> 
