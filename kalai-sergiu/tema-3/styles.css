@@ -1,0 +1,29 @@
+.body{
+    display: grid;
+    margin: 0 ;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+header{
+    position: absolute;
+    align-items: flex-start;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+footer{
+    position: relative;
+    align-items: flex-end;
+    width: 100%;
+    height: 100px;
+    background-color: royalblue;
+    top: 100%;
+    transform: translate(100%);
+    overflow: hidden;
+}
+footer:focus{
+    transform: translate(-100%);
+}

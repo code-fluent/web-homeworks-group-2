@@ -1,0 +1,19 @@
+body{
+    background: lightslategrey;
+    margin: 0px;
+    transform: translate(50%, 40%);
+}
+.box{
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ffffff;
+    background-color: lightskyblue ;
+    transform: translatex(-50%);
+    border-radius: 50%;
+}
+.box:focus {
+    width: 10px;
+    height: 200px;
+    background-color: #000000;
+    transform: translate3d(20%);
+}

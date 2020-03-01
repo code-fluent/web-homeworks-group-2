@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding:0;
+    background-image: url("https://r-fa.bstatic.com/xdata/images/xphoto/1920x810/34063640.jpg?k=311341784b23909530a9da856aa53c1c0140eec5619e1d4a27ec2c0ad641d926&o=");
+    background-size: cover;
+}
+.heartbeat{
+    position: absolute;
+    width:800px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffffff;
+    box-shadow: 12px 12px 12px rgba(131, 4, 4, 0.9);
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: lightskyblue;
+    
+}
+.heart {
+    position: relative;
+    top: 100px;
+    left: 95px;
+    animation: animate 1s ease-in-out infinite;
+}
+
+
+@keyframes animate
+{
+    0%{
+        transform:  scale(0.4);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%%{
+        transform:  scale(0.4);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.4);
+    }
+}

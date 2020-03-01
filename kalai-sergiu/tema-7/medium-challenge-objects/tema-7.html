@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var animal = {
+                type: "Dog",
+                name: "Azorel",
+                foodEated: ["bones"],
+                eatFood: true,
+                startedEating: function(){
+                    this.eatFood = true;
+                    console.log("Azorel started eating.");
+                },
+                stoppedEating: function(){
+                    this.eatFood = false;
+                    console.log("Azorel stoppend eating.");
+                },
+                start: function(food){
+                    this.foodEated = this.foodEated + food;
+                    console.log("Azorel has eated", this.foodEated, " ");
+                }
+            };
+            console.log("Azorel has eated " , this.foodEated);
+
+
+    </script>
+</body>
+</html>

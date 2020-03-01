@@ -1,0 +1,144 @@
+body{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Noto Sans JP'
+}
+
+#block{
+
+    box-sizing: border-box;
+    border-color:maroon;
+    box-shadow: 0 4px 8px rgba(56, 45, 212, 0.5);
+    border: 2px solid;
+    box-align: center;
+    display: block;
+    width: 370px;
+    height: 500px;
+    margin: center;
+    margin-top: 100;
+    padding-top: 20px;
+    padding-left: 75px;
+    text-decoration-color: blue;
+}
+/*Email input*/
+.user{
+    width: 50%;
+    position: relative;
+    height:60px;
+    overflow: hidden;
+}
+.user input{
+    width: 100%;
+    height: 100%;
+    color:  #595f6e;
+    padding-top:20px;
+    border:none;
+    outline:none;
+}
+.user label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.user label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3 ease;
+}
+.content-email{
+    position:absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3 ease;
+}
+.user input:focus + .label-email .content-email, .user input:valid + .label-email .content-email {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.user input:focus + .label-email::after, .user input:valid + .label-email{
+    transform: translateX(-100%);
+    transition: transform 0.3 ease;
+}
+/* Password input */
+
+.password{
+    width: 50%;
+    position: relative;
+    height:60px;
+    overflow: hidden;
+    inset-inline: center;
+}
+.password input{
+    width: 100%;
+    height: 100%;
+    color:  #595f6e;
+    padding-top:20px;
+    border:none;
+    outline:none;
+}
+.password label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.password label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3 ease;
+}
+.content-password{
+    position:absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3 ease;
+}
+.password input:focus + .label-password .content-password, .password input:valid + .label-password .content-password {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.password input:focus + .label-password::after, .password input:valid + .label-passwrd{
+    transform: translateX(-100%);
+    transition: transform 0.3 ease;
+}
+.lostpassword{
+    margin-top: 30px;
+    padding-left: 30px;
+    font-family: 'Noto Sans JP';
+}
+.button{
+box-sizing: border-box;
+margin-top: 20px;
+width: 60%;
+height: 20px;
+border: 1px solid rgb(56, 56, 170);
+background-color: rgb(56, 56, 170);
+text-align: center;
+
+}
